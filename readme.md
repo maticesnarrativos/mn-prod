@@ -3,7 +3,7 @@
  <img width=200px height=200px src="https://githubcampus.expert/assets/images/ce-flag.png" alt="Project logo"></a>
 </p>
 
-<h3 align="center">Personal portfolio page</h3>
+<h3 align="center">Matices Narrativos Homepage</h3>
 
 <!-- <div align="center">
 
@@ -20,7 +20,7 @@
 
 <p align="center"> Url to our page:
   <br>
-  https://maticesnarrativos .github.io/mn-prod/
+  https://maticesnarrativos.github.io/mn-prod/
   <br>
 </p>
 
@@ -37,9 +37,7 @@
 
 ## 🧐 About <a name = "about"></a>
 
-This is just a personal portfolio, I will be adding to this repository any web project that I create while studying by my own. As the portfolio itself, this readme is work in progress.
-
-ECMAScript6+>src>index.js -> examples of javascript fundaments and others.
+Welcome to our page
 
 <!-- ## 🏁 Getting Started <a name = "getting_started"></a>
 

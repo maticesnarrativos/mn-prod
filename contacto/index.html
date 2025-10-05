@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <base id="dynamic-base" href="/">
+    <script>
+      // update base if running on GitHub Pages
+      if (window.location.hostname === "maticesnarrativos.github.io") {
+        document.getElementById("dynamic-base")
+                .setAttribute("href", "/mn-dev/");
+      }
+    </script>
+
+    <meta charset="UTF-8">
+    <title>Cont&aacute;cto | Matices Narrativos</title>
+    <meta name="description" content="Pagina de contacto de Matices Narrativos">
+    <meta name="robots" content="noindex, follow">
+    <meta name="owner" content="Matices Narrativos">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- responsive design patterns, mobile firts, then tablet and last dekstop,
+    the best practice is to create different .css files for each one -->
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" >
+
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="components/legalFooter.js"></script>
+
+    <!-- usign image for favicon icon -->
+    <link rel="shortcut icon" href="assets/media/img/logo_white_background.png" type="image/x-icon">
+  </head>
+
+  <body class="App">
+    <my-header
+      logo="assets/media/img/logo_white_background.png"
+      logoAlt="Matices Narrativos. Aromatherapy, health and relaxation"
+      logoTitle = ""
+      link1=""
+      
+      link2="productos"
+      link2Text="Productos"
+      link3="catalogo/"
+      link3Text="Cat&aacute;logo"
+      link4="contacto/"
+      link4Text="Cont&aacute;cto"
+    ></my-header>
+
+    <main>
+      <section class="main-section">
+          <div class="contact">
+          <h2>
+            Informaci&oacute;n de contacto
+          </h2>
+          <div class="contact-info-section">
+            <div class="contact-info-section-column">
+              <h3>Preguntas o Comentarios</h3>
+              <a href="mailto:matices.narrativos@outlook.com">
+                <span class="icon-list-item-icon">
+                  <i class="fa fa-envelope"></i>
+                </span >
+                <span class="icon-list-item-text">
+                  Correo: matices.narrativos@outlook.com
+                </span >
+              </a>
+              <a href="https://wa.me/50688566678" target="_blank" rel="noopener noreferrer">
+                <span class="icon-list-item-icon">
+                  <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                </span >
+                <span class="icon-list-item-text">
+                  Tel&eacute;fono: +506 88566678
+                </span >
+              </a>
+            </div>
+            <div class="contact-info-section-column">
+              <h3>Horario de atenci&oacute;n:</h3>
+              <p>
+                Lunes a viernes: 7:00 am a 5:00 pm
+              </p>
+            </div>
+          </div>
+          <div class="contact-form-section">
+            <h3>Formulario de Contacto</h3>
+            <form
+              action="https://formspree.io/f/mzzjvddn"
+              method="POST"
+            >
+              <label>
+                Tu nombre:
+                <input 
+                type="name" 
+                name="name" 
+                placeholder="Tu nombre"
+                required >
+              </label>
+              <label>
+                Correo electr&oacute;nico:
+                <input 
+                type="email" 
+                name="email" 
+                placeholder="ejemplo@email.com"
+                required >
+              </label>
+              <label>
+                Mensaje:
+                <textarea name="message" required > </textarea>
+              </label>
+              <!-- your other form fields go here -->
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <my-footer
+      logo="assets/media/img/logo_white_background.png"
+      logoAlt="Matices Narrativos. Aromatherapy, health and relaxation"
+      logoTitle = ""
+      
+      link1="faq/"
+      link1Text="Preguntas frecuentes"
+      link2= "contacto/"
+      link2Text="Contacto"
+    ></my-footer>
+    <my-legalfooter></my-legalfooter>
+
+  </body>
+    <!-- Importing the logic to sanitize the inputs -->
+    <script src="assets/js/contact.js"></script>
+</html>

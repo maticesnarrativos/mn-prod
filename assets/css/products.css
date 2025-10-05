@@ -1,0 +1,49 @@
+.filter-sort-container-search {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#product-search {
+  padding: 0.6em 1.2em;
+  border: 1.5px solid var(--primary-green, #51ad87);
+  border-radius: 2em;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(81,173,135,0.07);
+  background: #fff;
+  min-width: 220px;
+}
+
+#product-search:focus {
+  border-color: var(--primary-blue, #0870d8);
+  box-shadow: 0 4px 16px rgba(8,112,216,0.13);
+}
+.filter-sort-container-filter select {
+  margin-right: 1rem;
+  padding: 0.5em 1rem;
+  border-radius: 2rem;
+  border: 1.5px solid var(--primary-green, #51ad87);
+  font-size: 1rem;
+  background: #fff;
+  min-width: 160px;
+}
+.filter-sort-container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+.filter-sort-container-filter{
+  align-self: start;
+  text-align: left;
+}
+.filter-sort-container-filter select{
+  margin-bottom: 1rem;
+}
+@media (min-width: 769px) {
+  .filter-sort-container {
+    flex-direction: row;
+  }
+}

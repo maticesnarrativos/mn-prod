@@ -12,17 +12,17 @@
     </script>
 
     <meta charset="UTF-8">
-    <title>Preguntas frecuentes | Matices Narrativos</title>
-    <meta name="description" content="P&aacute;gina de preguntas frecuentes de Matices Narrativos">
+    <title>Error 404 | Matices Narrativos</title>
+    <meta name="description" content="Pagina de error de Matices Narrativos">
     <meta name="robots" content="noindex, follow">
     <meta name="owner" content="Matices Narrativos">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
     <!-- responsive design patterns, mobile firts, then tablet and last dekstop,
     the best practice is to create different .css files for each one -->
     <link rel="stylesheet" href="assets/css/global.css">
-    <link rel="stylesheet" href="assets/css/faq.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css" >
 
     <script defer src="components/header.js"></script>
@@ -49,9 +49,11 @@
     ></my-header>
 
     <main>
-      <section class="main-section">
-        <div class="quesitions-container">
-          <!-- Questions will be loaded here dynamically -->
+      <section  class="main-section">
+        <div class="404-container">
+          <h1>Error 404: P&aacute;gina no encontrada</h1>
+          <p>Lo sentimos. La p&aacute;gina que buscas no existe.</p>
+          <p><a href="">Regresar a inicio</a></p>
         </div>
       </section>
     </main>
@@ -63,12 +65,13 @@
       
       link1="faq/"
       link1Text="Preguntas frecuentes"
-      link2= "contacto/"
+      link2="contacto/"
       link2Text="Contacto"
     ></my-footer>
     <my-legalfooter></my-legalfooter>
 
-    <!-- Importing the logic for the FAQs -->
-    <script src="assets/js/faq.js" data-questions="assets/json/faq.json"></script>
+    <!-- Importing the logic for the pagination -->
+    <!-- <script src="./index.js"></script> -->
   </body>
+
 </html>

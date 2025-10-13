@@ -1,14 +1,42 @@
 [
   {
-    "question"  : "¿Cómo puedo contactar con el soporte?",
-    "answer"    : "Puedes contactarnos a través de nuestro correo electrónico soporte@ej"
+    "question"  : "¿Qu&eacute; es la aromaterapia y c&oacute;mo funciona?",
+    "answer"    : "La aromaterapia es una terapia natural que utiliza aceites esenciales extra&iacute;dos de plantas para promover el bienestar f&iacute;sico, mental y emocional. Los aromas act&uacute;an directamente sobre el sistema nervioso, ayudando a equilibrar cuerpo y mente."
   },
   {
-    "question"  : "¿Cuál es el horario de atención al cliente?",
-    "answer"    : "Nuestro horario de atención es de lunes a viernes, de 9:00 a.m. a 6:00 p.m."
+    "question"  : "¿Los productos son de uso externo o pueden ingerirse?",
+    "answer"    : "Nuestros productos son exclusivamente de uso externo. No deben ingerirse ni aplicarse en mucosas. Se recomienda seguir siempre las indicaciones de uso y mantenerlos fuera del alcance de los niños."
   },
   {
-    "question"  : "¿Dónde están ubicadas nuestras oficinas?",
-    "answer"    : "Nuestras oficinas principales están ubicadas en San José, Costa Rica."
+    "question"  : "¿Cu&aacute;l es la mejor forma de usar los aceites esenciales?",
+    "answer"    : "Depende del tipo de producto. Los aceites pueden aplicarse sobre la piel o utilizarse para aromatizar ambientes mediante difusores o spray. En cada producto encontrar&aacute;s las instrucciones de uso adecuadas."
+  },
+  {
+    "question"  : "¿Puedo usar aromaterapia si estoy embarazada o tengo alguna condici&oacute;n m&eacute;dica?",
+    "answer"    : "Algunos aceites no se recomiendan durante el embarazo o en ciertas condiciones de salud. Siempre sugerimos consultar con un profesional antes de usarlos."
+  },
+  {
+    "question"  : "¿Son seguros los productos para toda la familia?",
+    "answer"    : "S&iacute;, todos nuestros productos est&aacute;n elaborados con aceites esenciales naturales. Aun as&iacute;, recomendamos precauci&oacute;n en niños pequeños, embarazadas y personas con alergias."
+  },
+  {
+    "question"  : "¿C&oacute;mo debo almacenar mis aceites esenciales o Roll-on?",
+    "answer"    : "Gu&aacute;rdalos en un lugar fresco, seco y alejado de la luz solar directa para conservar su pureza y efectividad."
+  },
+  {
+    "question"  : "¿Cu&aacute;nto tiempo duran los aceites esenciales?",
+    "answer"    : "Bien conservados, pueden durar entre 1 y 3 años dependiendo del tipo de aceite. Los c&iacute;tricos suelen tener una vida &uacute;til m&aacute;s corta."
+  },
+  {
+    "question"  : "¿Hacen env&iacute;os a todo el pa&iacute;s?",
+    "answer"    : "S&iacute;, realizamos env&iacute;os a todo Costa Rica mediante servicios de mensajer&iacute;a segura. Tambi&eacute;n puedes coordinar la entrega directamente por WhatsApp."
+  },
+  {
+    "question"  : "¿Puedo personalizar una mezcla de aceites seg&uacute;n mis necesidades?",
+    "answer"    : "¡Por supuesto! Ofrecemos mezclas personalizadas seg&uacute;n tu estado emocional o f&iacute;sico. Solo cont&aacute;ctanos para una asesor&iacute;a personalizada."
+  },
+  {
+    "question"  : "¿Atienden consultas sobre aromaterapia?",
+    "answer"    : "S&iacute;, atendemos consultas por WhatsApp para orientarte sobre el uso adecuado de los aceites esenciales y ayudarte a elegir los productos que mejor se adapten a ti."
   }
 ]

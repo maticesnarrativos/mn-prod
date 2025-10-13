@@ -60,6 +60,7 @@
     <!-- Scripts -->
     <script defer src="components/header.js"></script>
     <script defer src="components/footer.js"></script>
+    <script defer src="assets/js/getPrices.js"></script>
     <script defer src="components/legalFooter.js"></script>
     <script defer src="assets/js/renderProducts.js"></script>
     <script defer src="assets/js/initProductModalSwiper.js"></script>
@@ -112,9 +113,6 @@
             </div>
             <!-- -------------------------Swiper Ends----------------------------------- -->
           </div>
-          <div class="home-more-info-section"><!-- 
-            <h2 class="home-more-info-title">Informaci&oacute;n</h2> -->
-          </div>
           <h2 class="home-main-container-title">Productos destacados del mes</h2>
           <!-- -------------------------Products recs swiper start----------------------------------- -->
           <div class="products-recs-section-carousel swiper-recs swiper">
@@ -130,6 +128,52 @@
             <div class="swiper-button-next swiper-button-next-recs"></div>
           </div>
           <!-- -------------------------Products recs swiper start----------------------------------- -->
+
+          
+          <div class="home-more-info-section"> 
+            <div class="home-more-info-section-left">
+              <h2 class="home-more-info-title">Aromas disponibles</h2>
+              <!-- -------------------------Swiper start----------------------------------- -->
+              <div class="swiper-left swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper" id="left-swiper-wrapper">
+                  <!-- Dynamic slides -->
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination swiper-pagination-left"></div>
+
+                <!-- If we need navigation buttons -->
+                <!-- <div class="swiper-button-prev swiper-button-prev-left"></div>
+                <div class="swiper-button-next swiper-button-next-left"></div> -->
+              </div>
+              <!-- -------------------------Swiper Ends----------------------------------- -->            
+            </div>
+            <div class="home-more-info-section-center">
+              <h2 class="home-more-info-title">Aromaterapia</h2>
+              <img
+                loading="lazy"
+                src="assets/media/banners/que_es_aromaterapia-min.jpg"
+                alt="Explicacion de aromaterapia"
+                title=""/>
+            </div>
+            <div class="home-more-info-section-right">
+              <h2 class="home-more-info-title">Combinaciones sugeridas</h2>
+              <!-- -------------------------Swiper start----------------------------------- -->
+              <div class="swiper-right swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper" id="right-swiper-wrapper">
+                  <!-- Dynamic slides -->
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination swiper-pagination-right"></div>
+
+                <!-- If we need navigation buttons -->
+                <!-- <div class="swiper-button-prev swiper-button-prev-right"></div>
+                <div class="swiper-button-next swiper-button-next-right"></div> -->
+              </div>
+              <!-- -------------------------Swiper Ends----------------------------------- -->  
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -158,6 +202,10 @@
     <script src="assets/js/swiperSetup.js" data-products="assets/json/home-banners.json" swiper-sufix="banners" wrapper-id="banner-swiper-wrapper"></script>
     
     <script src="assets/js/recsCarousel.js" data-products="assets/json/highlight-products.json" swiper-sufix="recs" wrapper-id="products-recs-swiper-wrapper"></script>
+
+    
+    <script src="assets/js/swiperVerticalBanners.js" data-products="assets/json/odors.json" swiper-sufix="left" wrapper-id="left-swiper-wrapper"></script>
+    <script src="assets/js/swiperVerticalBanners.js" data-products="assets/json/combinations.json" swiper-sufix="right" wrapper-id="right-swiper-wrapper"></script>
   </body>
   
 </html>

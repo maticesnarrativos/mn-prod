@@ -10,43 +10,43 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     // Generate slides
     if (!Array.isArray(items)) throw new Error("Invalid product data (expected array)");
-      const allitems = items.filter(p => typeof p === "object" && p !== null);
+      const allitems = items.filter(p => typeof p === "object" && p !== null && p.onStock !== false);
 
-    // Use renderProducts to generate the slides
-    window.renderProducts(allitems, {
-      gridSelector: `#${wrapperID}`,
-      tileWrapperClass: 'swiper-slide'
-    });
-
-    // Initialize Swiper only after slides are created
-    // eslint-disable-next-line no-unused-vars
-    const swiper = new Swiper(`.swiper-${swiperSufix}`, {
-      direction: 'horizontal',
-      loop: true,
-      slidesPerView: 1.25,
-      spaceBetween: 10,
-      centeredSlides: true,
-      grabCursor: true,
-      allowTouchMove: true,
-      pagination: {
-        el: `.swiper-pagination-${swiperSufix}`,
-        clickable: true,
-      },
-      breakpoints: {
-          600: {slidesPerView: 2,},
-          900: {slidesPerView: 3.25,},
-          1200: {slidesPerView: 4,},
-      },
-      navigation: {
-        nextEl: `.swiper-button-next-${swiperSufix}`,
-        prevEl: `.swiper-button-prev-${swiperSufix}`,
-      },
-      lazy: {
-        enabled: true,
-        loadOnTransitionStart: true,
-        loadPrevNext: true,
-        loadPrevNextAmount: 4,
-      },
+    window.getProductsWithPrices(allitems).then(productsWithPrices => {
+      window.renderProducts(productsWithPrices, {
+        gridSelector: `#${wrapperID}`,
+        tileWrapperClass: 'swiper-slide'
+      });
+      // Initialize Swiper only after slides are created
+      // eslint-disable-next-line no-unused-vars
+      const swiper = new Swiper(`.swiper-${swiperSufix}`, {
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 1.25,
+        spaceBetween: 10,
+        centeredSlides: false,
+        grabCursor: true,
+        allowTouchMove: true,
+        pagination: {
+          el: `.swiper-pagination-${swiperSufix}`,
+          clickable: true,
+        },
+        breakpoints: {
+            600: {slidesPerView: 2,},
+            900: {slidesPerView: 3.25,},
+            1200: {slidesPerView: 4,},
+        },
+        navigation: {
+          nextEl: `.swiper-button-next-${swiperSufix}`,
+          prevEl: `.swiper-button-prev-${swiperSufix}`,
+        },
+        lazy: {
+          enabled: true,
+          loadOnTransitionStart: true,
+          loadPrevNext: true,
+          loadPrevNextAmount: 4,
+        },
+      });
     });
   } catch (error) {
     console.error("Error loading item.json:", error);

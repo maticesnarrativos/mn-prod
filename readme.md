@@ -20,7 +20,7 @@
 
 <p align="center"> Url to our page:
   <br>
-  https://maticesnarrativos.github.io/mn-dev/
+  https://maticesnarrativos.com/
   <br>
 </p>
 

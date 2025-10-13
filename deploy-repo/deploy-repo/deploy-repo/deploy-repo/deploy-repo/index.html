@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <base id="dynamic-base" href="/">
+    <script>
+      // update base if running on GitHub Pages
+      if (window.location.hostname === "maticesnarrativos.github.io") {
+        document.getElementById("dynamic-base")
+                .setAttribute("href", "/mn-dev/");
+      }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Matices Narrativos",
+      "url": "https://maticesnarrativos.com/",
+      "logo": "https://maticesnarrativos.com/assets/media/img/logo_white_background.png",
+      "sameAs": [
+        "https://www.instagram.com/matices.narrativos",
+        "https://www.facebook.com/share/18tjPKQjAF/"
+      ]
+    }
+    </script>
+
+    <meta charset="UTF-8">
+    <title>Matices Narrativos | Aromaterapia, Salud y Relajaci&oacute;n</title>
+    <meta name="description" content="Matices Narrativos ofrece productos de aromaterapia, bienestar y relajaci&oacute;n natural. Conoce nuestras colecciones y art&iacute;culos destacados.">
+    <meta name="author" content="Matices Narrativos" />
+    <link rel="canonical" href="https://maticesnarrativos.com/" />
+    <meta name="robots" content="index, follow">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph meta starts -->
+    <meta property="og:title" content="Matices Narrativos | Aromaterapia, Salud y Relajaci&oacute;n">
+    <meta property="og:url" content="https://maticesnarrativos.com/">
+    <meta property="og:description" content="Matices Narrativos ofrece productos de aromaterapia, bienestar y relajaci&oacute;n natural. Conoce nuestras colecciones y art&iacute;culos destacados.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/media/img/logo_white_background.png">
+    <!-- Open Graph meta ends -->
+
+    <!-- ✅ Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Matices Narrativos | Aromaterapia, Salud y Relajaci&oacute;n" />
+    <meta name="twitter:description" content="Matices Narrativos ofrece productos de aromaterapia, bienestar y relajaci&oacute;n natural. Conoce nuestras colecciones y art&iacute;culos destacados." />
+    <meta name="twitter:image" content="assets/media/img/logo_white_background.png" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" >
+    
+    <!-- Swiper Styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Scripts -->
+    <script defer src="components/header.js"></script>
+    <script defer src="components/footer.js"></script>
+    <script defer src="components/legalFooter.js"></script>
+    <script defer src="assets/js/renderProducts.js"></script>
+    <script defer src="assets/js/initProductModalSwiper.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- usign image for favicon icon -->
+    <link rel="shortcut icon" href="assets/media/img/logo_white_background.png" type="image/x-icon">
+
+  </head>
+
+  <body class="App">
+    <noscript>Necesitas habilitar JavaScript para ver esta p&aacute;gina.</noscript>
+    <my-header
+      logo="assets/media/img/logo_white_background.png"
+      logoAlt="Matices Narrativos. Aromatherapy, health and relaxation"
+      logoTitle = ""
+      link1=""
+      
+      link2="productos/"
+      link2Text="Productos"
+      link3="catalogo/"
+      link3Text="Cat&aacute;logo"
+      link4="contacto/"
+      link4Text="Cont&aacute;cto"
+    ></my-header>
+
+    <main>
+      <section  class="main-section">
+        <div class="home-main-container">
+          <div class="expl-section">
+            <div class="expl-section-highlight">
+              <img
+                loading="lazy"
+                src="assets/media/banners/gran_rifa.jpeg"
+                alt="Colleci&oacute;n Bienestar"
+                title="Colleci&oacute;n Bienestar"/>
+            </div>
+            <!-- -------------------------Swiper start----------------------------------- -->
+            <div class="expl-section-carousel swiper-banners swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper" id="banner-swiper-wrapper">
+                <!-- Dynamic slides -->
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination swiper-pagination-banners"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev swiper-button-prev-banners"></div>
+              <div class="swiper-button-next swiper-button-next-banners"></div>
+            </div>
+            <!-- -------------------------Swiper Ends----------------------------------- -->
+          </div>
+          <div class="home-more-info-section"><!-- 
+            <h2 class="home-more-info-title">Informaci&oacute;n</h2> -->
+          </div>
+          <h2 class="home-main-container-title">Productos destacados del mes</h2>
+          <!-- -------------------------Products recs swiper start----------------------------------- -->
+          <div class="products-recs-section-carousel swiper-recs swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper" id="products-recs-swiper-wrapper">
+              <!-- Dynamic Slides -->
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination swiper-pagination-recs"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev swiper-button-prev-recs"></div>
+            <div class="swiper-button-next swiper-button-next-recs"></div>
+          </div>
+          <!-- -------------------------Products recs swiper start----------------------------------- -->
+        </div>
+      </section>
+    </main>
+    
+    <my-footer
+      logo="assets/media/img/logo_white_background.png"
+      logoAlt="Matices Narrativos. Aromatherapy, health and relaxation"
+      logoTitle = ""
+      
+      link1="faq/"
+      link1Text="Preguntas frecuentes"
+      link2="contacto/"
+      link2Text="Contacto"
+    ></my-footer>
+    <my-legalfooter></my-legalfooter>
+
+    
+    <div id="product-modal" class="product-modal" style="display:none;">
+      <div class="product-modal-content">
+        <span class="product-modal-close">&times;</span>
+        <div class="product-modal-body"></div>
+      </div>
+    </div>
+
+    <!-- Importing the logic for the swipers -->
+    <script src="assets/js/swiperSetup.js" data-products="assets/json/home-banners.json" swiper-sufix="banners" wrapper-id="banner-swiper-wrapper"></script>
+    
+    <script src="assets/js/recsCarousel.js" data-products="assets/json/highlight-products.json" swiper-sufix="recs" wrapper-id="products-recs-swiper-wrapper"></script>
+  </body>
+  
+</html>

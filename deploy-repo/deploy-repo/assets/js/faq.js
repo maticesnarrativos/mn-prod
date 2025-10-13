@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 ${q.answer}
               </div>
             </div>
+            <hr class="faq-hr"/>
           `).join('')}
         </div>
       `;

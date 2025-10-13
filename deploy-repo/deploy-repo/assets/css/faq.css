@@ -1,10 +1,8 @@
 /* All the color must be defined here */
 @media (prefers-color-scheme: dark) {
-  .faq-item {
-    border-bottom: 1px solid #ddd;
-  }
-  .faq-item:hover {
-    border-bottom: 0px solid #ddd;
+  .faq-hr {
+    color: var(--primary-text-color-dark);
+    background-color: var(--primary-text-color-dark);
   }
   .faq-question:hover, .faq-question[aria-expanded="true"] {
     background: var(--primary-background-color-light);
@@ -15,11 +13,9 @@
   }
 }
 @media (prefers-color-scheme: light) {
-  .faq-item {
-    border-bottom: 1px solid #ddd;
-  }
-  .faq-item:hover {
-    border-bottom: 0px solid #ddd;
+  .faq-hr {
+    color: var(--primary-text-color-light);
+    background-color: var(--primary-text-color-light);
   }
   .faq-question:hover, .faq-question[aria-expanded="true"] {
     background: var(--primary-background-color-dark);
@@ -33,7 +29,7 @@
 
 
 .faq-accordion {
-  max-width: 700px;
+  max-width: 1000px;
   margin: 2rem auto;
 }
 .faq-question {
@@ -60,4 +56,10 @@
   font-size: 1rem;
   text-align: left;
   line-height: 1rem;
+}
+.faq-hr{
+  width: 95%;
+  margin: 0.5rem auto;
+  border:none;
+  height: 1px;
 }

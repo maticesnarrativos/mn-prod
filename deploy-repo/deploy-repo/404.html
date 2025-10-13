@@ -22,6 +22,7 @@
 
     <!-- responsive design patterns, mobile firts, then tablet and last dekstop,
     the best practice is to create different .css files for each one -->
+    <link rel="stylesheet" href="assets/css/404.css">
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css" >
 
@@ -49,9 +50,22 @@
     ></my-header>
 
     <main>
-      <section  class="main-section">
-        <div class="404-container">
-          <h1>Error 404: P&aacute;gina no encontrada</h1>
+      <section class="main-section">
+        <div class="error-container">
+          <div class="error-container-background">
+            <img
+              loading="lazy"
+              src="assets/media/img/background_contacto.jpg"
+              alt="Colleci&oacute;n Bienestar"
+              title="Colleci&oacute;n Bienestar"/>
+          </div>
+          <div class="error-container-copy">
+            <h2>
+              P&aacute;gina no encontrada:<br>Error 404
+            </h2>
+          </div>
+        </div>
+        <div class="error-body">
           <p>Lo sentimos. La p&aacute;gina que buscas no existe.</p>
           <p><a href="">Regresar a inicio</a></p>
         </div>

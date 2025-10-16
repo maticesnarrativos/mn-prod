@@ -1,0 +1,14 @@
+[
+  {
+    "question"  : "¿Cómo puedo contactar con el soporte?",
+    "answer"    : "Puedes contactarnos a través de nuestro correo electrónico soporte@ej"
+  },
+  {
+    "question"  : "¿Cuál es el horario de atención al cliente?",
+    "answer"    : "Nuestro horario de atención es de lunes a viernes, de 9:00 a.m. a 6:00 p.m."
+  },
+  {
+    "question"  : "¿Dónde están ubicadas nuestras oficinas?",
+    "answer"    : "Nuestras oficinas principales están ubicadas en San José, Costa Rica."
+  }
+]

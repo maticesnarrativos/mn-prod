@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <base id="dynamic-base" href="/">
+    <script>
+      // update base if running on GitHub Pages
+      if (window.location.hostname === "maticesnarrativos.github.io") {
+        document.getElementById("dynamic-base")
+                .setAttribute("href", "/mn-dev/");
+      }
+    </script>
+
+    <meta charset="UTF-8">
+    <title>Productos | Matices Narrativos</title>
+    <meta name="description" content="Pagina de productos de Matices Narrativos">
+    <meta name="robots" content="noindex, follow">
+    <meta name="owner" content="Matices Narrativos">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- responsive design patterns, mobile firts, then tablet and last dekstop,
+    the best practice is to create different .css files for each one -->
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/products.css" >
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" >
+
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="components/legalFooter.js"></script>
+
+    <!-- usign image for favicon icon -->
+    <link rel="shortcut icon" href="assets/media/img/logo_white_background.png" type="image/x-icon">
+  </head>
+
+  <body class="App">
+    <my-header
+      logo="assets/media/img/logo_white_background.png"
+      logoAlt="Matices Narrativos. Aromatherapy, health and relaxation"
+      logoTitle = ""
+      link1=""
+      
+      link2="productos/"
+      link2Text="Productos"
+      link3="catalogo/"
+      link3Text="Cat&aacute;logo"
+      link4="contacto/"
+      link4Text="Cont&aacute;cto"
+    ></my-header>
+
+    <main>
+      <section  class="main-section">
+        <div class="products-main-container">
+          <div class="filter-sort-container">
+            <div class="filter-sort-container-filter">
+              <select id="filter-attribute">
+                <option value="">Filtrar por...</option>
+                <option value="category">Categoría</option>
+                <option value="collection">Colección</option>
+                <option value="type">Tipo</option>
+              </select>
+              <select id="filter-value" style="display:none;">
+                <option value="">Selecciona un valor...</option>
+              </select>
+            </div>
+            <div class="filter-sort-container-sort"></div>
+            <div class="filter-sort-container-search">
+              <input
+                type="search"
+                id="product-search"
+                placeholder="🔍 Buscar productos..."
+                autocomplete="off"
+              />
+            </div>
+          </div>
+            <div class="products-grid">
+              <!-- Products will be loaded here dynamically -->
+            </div>
+          </div>
+      </section>
+    </main>
+    
+    <my-footer
+      logo="assets/media/img/logo_white_background.png"
+      logoAlt="Matices Narrativos. Aromatherapy, health and relaxation"
+      logoTitle = ""
+      
+      link1="faq/"
+      link1Text="Preguntas frecuentes"
+      link2="contacto/"
+      link2Text="Contacto"
+    ></my-footer>
+    <my-legalfooter></my-legalfooter>
+
+    <div id="product-modal" class="product-modal" style="display:none;">
+      <div class="product-modal-content">
+        <span class="product-modal-close">&times;</span>
+        <div class="product-modal-body"></div>
+      </div>
+    </div>
+
+    <!-- Importing the logic for the products grid -->
+    <script src="assets/js/products.js" data-products="assets/json/products.json"></script>
+  </body>
+
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "mn-dev",
+  "version": "1.0.0",
+  "description": "Matices Narrativos Homepage",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/maticesnarrativos/mn-dev.git"
+  },
+  "author": "Johnn Hernandez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maticesnarrativos/mn-dev/issues"
+  },
+  "homepage": "https://github.com/maticesnarrativos/mn-dev#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.37.0",
+    "eslint": "^9.37.0",
+    "jest": "^30.2.0"
+  },
+  "engines": {
+    "node": "22.16.0",
+    "npm": "10.9.2"
+  }
+}

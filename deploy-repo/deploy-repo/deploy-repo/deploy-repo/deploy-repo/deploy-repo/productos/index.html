@@ -26,9 +26,18 @@
     <link rel="stylesheet" href="assets/css/products.css" >
     <link rel="stylesheet" href="assets/css/font-awesome.min.css" >
 
-    <script src="components/header.js"></script>
-    <script src="components/footer.js"></script>
-    <script src="components/legalFooter.js"></script>
+    <!-- Swiper Styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script defer src="components/header.js"></script>
+    <script defer src="components/footer.js"></script>
+    <script defer src="components/legalFooter.js"></script>
+    <script defer src="assets/js/renderProducts.js"></script>
+    <script defer src="assets/js/initProductModalSwiper.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- usign image for favicon icon -->
     <link rel="shortcut icon" href="assets/media/img/logo_white_background.png" type="image/x-icon">
@@ -64,14 +73,28 @@
                 <option value="">Selecciona un valor...</option>
               </select>
             </div>
-            <div class="filter-sort-container-sort"></div>
-            <div class="filter-sort-container-search">
-              <input
-                type="search"
-                id="product-search"
-                placeholder="🔍 Buscar productos..."
-                autocomplete="off"
-              />
+            <div class="search-sort-container">
+              <div class="filter-sort-container-search">
+                <input
+                  type="search"
+                  id="product-search"
+                  placeholder="🔍 Buscar productos..."
+                  autocomplete="off"
+                />
+              </div>
+              <div class="filter-sort-container-sort">
+                <select id="sort-products">
+                  <option value="">Ordenar por...</option>
+                  <option value="name-asc">Nombre (A-Z)</option>
+                  <option value="name-desc">Nombre (Z-A)</option>
+                  <option value="category-asc">Categoría (A-Z)</option>
+                  <option value="category-desc">Categoría (Z-A)</option>
+                  <option value="type-asc">Tipo (A-Z)</option>
+                  <option value="type-desc">Tipo (Z-A)</option>
+                  <option value="cost-asc">Precio (asc)</option>
+                  <option value="cost-desc">Precio (desc)</option>
+                </select>
+              </div>
             </div>
           </div>
             <div class="products-grid">

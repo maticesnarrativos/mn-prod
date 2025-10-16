@@ -1,0 +1,96 @@
+
+/* Start Contact styles */
+.contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.contact h2{
+  font-size: 3rem;
+  padding: 2rem;
+  background-color: #000000be;
+  color: #ffffff;
+}
+.contact .contact-info-section{
+  display: flex;
+  margin: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.contact .contact-info-section-column{
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.contact h3{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.contact .contact-info-section-column a{
+  text-decoration: none;
+  margin: 0.5rem 0;
+}
+.contact .contact-form-section{
+  width: 100%;
+  max-width: 800px;
+  align-self: center;
+}
+.contact .contact-form-section form,
+.contact .contact-form-section form label{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.contact .contact-form-section form label{
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.contact .contact-form-section form label input,
+.contact .contact-form-section form label textarea{
+  padding: 0.7rem 1rem;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  background: #f9f9f9;
+  transition: border-color 0.2s;
+}
+.contact .contact-form-section input:focus,
+.contact .contact-form-section textarea:focus {
+  border-color: var(--primary-green);
+  outline: none;
+  background: #fff;
+}
+.contact-form-section textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+.contact-form-section button[type="submit"] {
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+  background: var(--primary-green);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 5px 5px 8px rgba(49, 145, 105, 0.43);
+  max-width: 150px;
+}
+.contact-form-section button[type="submit"]:hover,
+.contact-form-section button[type="submit"]:focus {
+  background: #3e8e6d;
+  box-shadow: 8px 8px 16px rgba(49, 145, 105, 0.43);
+}
+/* End Contact styles */
+
+@media (min-width: 769px) {
+  /* Start Contact styles */
+  .contact .contact-info-section{
+    flex-direction: row;
+  }
+  /* End Contact styles */
+}

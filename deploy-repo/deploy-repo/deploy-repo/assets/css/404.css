@@ -1,0 +1,27 @@
+/* Start 404 styles */
+.error-container {
+  max-width: 100%;
+  position: relative;
+  align-items: center;
+}
+.error-container .error-container-background img{
+  max-width: 100%;
+  max-height: 50vh;
+}
+.error-container .error-container-copy{
+  position: absolute;
+  top: 23%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 100%;
+}
+.error-container h2{
+  font-size: clamp(20px, 8.2vw, 55px);
+  line-height: clamp(20px, 8.2vw, 55px);
+  color: #000000be;
+  max-width: 100%;
+}
+.error-body{
+  margin: 2rem 0;
+}
+/* End 404 styles */

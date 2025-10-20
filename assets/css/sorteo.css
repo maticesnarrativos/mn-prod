@@ -1,0 +1,227 @@
+.draw-main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1.25rem;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.draw-main-section .draw-input{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.draw-main-section .draw-actions{
+  display: flex;
+  flex-direction: column;
+}
+.draw-main-section .draw-input input[type="file"] {
+  padding: 0.4rem;
+  margin: 10px 0;
+}
+.draw-main-section .draw-input textarea {
+  resize: vertical;
+  min-height: 120px;
+  max-height: 320px;
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 0.95rem;
+  background: #fff;
+  margin: 15px 0;
+}
+.draw-main-section .draw-input #draw-seed {
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 0.95rem;
+  background: #fff;
+  margin: 15px 0;
+}
+.draw-main-section .draw-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 180px;
+}
+.draw-main-section .draw-actions button {
+  padding: 0.65rem 0.9rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(180deg, var(--primary-green, #51ad87), #3e8e6d);
+  box-shadow: 0 6px 18px rgba(81,173,135,0.12);
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.draw-main-section .draw-actions button:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 8px rgba(81,173,135,0.08);
+}
+.draw-main-section .draw-actions button[disabled] {
+  opacity: 0.55;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.draw .draw-info {
+  margin-top: 20px;
+}
+.draw .draw-info #draw-list {
+  margin: 0.4rem 0 0 0;
+  padding-left: 1rem;
+  max-height: 200px;
+  overflow: auto;
+  list-style: none;
+}
+.draw .draw-info #draw-result{
+  white-space: pre-wrap;
+  margin-top: 0.5rem;
+}
+/* Winner modal styles */
+.draw-winner-modal { 
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1200;
+}
+.draw-winner-modal.show { display: flex; }
+
+.draw-winner-backdrop {
+  position: absolute; inset: 0;
+  background: rgba(0,0,0,0.45);
+  backdrop-filter: blur(4px);
+  animation: backdropFade .24s ease;
+}
+
+@keyframes backdropFade { from { opacity: 0 } to { opacity: 1 } }
+
+.draw-winner-box {
+  position: relative;
+  width: min(92%, 520px);
+  border-radius: 14px;
+  background: linear-gradient(180deg,#fff,#fbfbfb);
+  box-shadow: 0 30px 80px rgba(10,10,12,0.25);
+  padding: 1.25rem 1.25rem 1.6rem;
+  transform: translateY(12px) scale(.96);
+  animation: modalPop .28s cubic-bezier(.2,.9,.22,1) forwards;
+  z-index: 5;
+  text-align: center;
+  overflow: visible;
+  color: #000;
+}
+@keyframes modalPop {
+  to { transform: translateY(0) scale(1); }
+}
+.draw-winner-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  border: none;
+  background: transparent;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  color: #333;
+}
+
+.draw-winner-content { position: relative; padding-top: 6px; }
+
+.winner-emoji {
+  font-size: 2.8rem;
+  margin-bottom: 0.45rem;
+}
+
+/* winner text */
+.modal-winner-text {
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin: 0.35rem 0;
+  color: var(--primary-text-color-light, #222);
+  word-break: break-word;
+}
+.modal-winner-seed {
+  margin-top: 0.6rem;
+  color: #555;
+  font-size: 0.9rem;
+  white-space: pre-wrap;
+}
+
+/* confetti pieces */
+.confetti {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: visible;
+  z-index: 2;
+}
+.confetti .piece {
+  --w: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;         
+  width: var(--w);
+  height: 14px;
+  display: block;
+  transform: translate(-50%, -50%) translateZ(0);
+  will-change: transform, opacity;
+  animation-name: confettiBurst;
+  animation-timing-function: cubic-bezier(.15,.6,.25,1);
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: var(--dur, 2.4s);
+  animation-delay: var(--delay, 0s);
+  opacity: 1;
+}
+.confetti .piece .shard {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 2px;
+  transform-origin: center;
+  will-change: transform;
+  animation-name: confettiSpin;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: var(--spinDur, 1.2s);
+  animation-delay: var(--spinDelay, 0s);
+}
+/* burst moves piece from center to (dx,dy) and fades */
+@keyframes confettiBurst {
+  from {
+    transform: translate(-50%, -50%) translateZ(0) rotate(0deg);
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  to {
+    transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) translateZ(0) rotate(var(--rot, 0deg));
+    opacity: 0;
+  }
+}
+
+/* spin rotates shard independently */
+@keyframes confettiSpin {
+  0% { transform: rotate(0deg) translateZ(0); }
+  100% { transform: rotate(360deg) translateZ(0); }
+}
+
+@media (min-width: 768px) {
+  .draw-main-section {
+    flex-direction: row;
+  }
+}
+/* responsive */
+@media (max-width: 480px) {
+  .modal-winner-text { font-size: 1rem; }
+  .draw-winner-box { padding: 1rem; }
+}

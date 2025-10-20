@@ -15,7 +15,7 @@
         "alt": "Frescura Mental roll-on"
       }
     ], 
-    "cost": "₡7590",
+    "cost": "roll-on-cb",
     "date": "2025/10/05",
     "onStock": true
   },
@@ -35,7 +35,7 @@
         "alt": "Impulso Vital gotero"
       }
     ], 
-    "cost": "₡4890",
+    "cost": "gotero-cb",
     "date": "2025/10/05",
     "onStock": true
   },
@@ -55,7 +55,7 @@
         "alt": "Impulso Vital roll-on"
       }
     ], 
-    "cost": "₡7590",
+    "cost": "roll-on-cb",
     "date": "2025/10/05",
     "onStock": true
   },
@@ -75,7 +75,7 @@
         "alt": "Mente Serena roll-on"
       }
     ], 
-    "cost": "₡7590",
+    "cost": "roll-on-cb",
     "date": "2025/10/05",
     "onStock": true
   },
@@ -95,7 +95,7 @@
         "alt": "Mente Serena gotero"
       }
     ], 
-    "cost": "₡4890",
+    "cost": "gotero-cb",
     "date": "2025/10/05",
     "onStock": true
   },
@@ -115,7 +115,7 @@
         "alt": "Sueño Profundo gotero"
       }
     ], 
-    "cost": "₡4890",
+    "cost": "gotero-cb",
     "date": "2025/10/05",
     "onStock": true
   },
@@ -135,7 +135,7 @@
         "alt": "Sueño Profundo roll-on"
       }
     ], 
-    "cost": "₡7590",
+    "cost": "roll-on-cb",
     "date": "2025/10/05",
     "onStock": true
   },
@@ -155,7 +155,7 @@
         "alt": "Aceite para masajes M&uacute;sculos Libres"
       }
     ], 
-    "cost": "₡14390",
+    "cost": "aceite-cb",
     "date": "2025/10/05",
     "onStock": true
   },
@@ -199,7 +199,7 @@
         "alt": "Amigurumi Mochila de Calabaza"
       }
     ], 
-    "cost": "₡4990 c/u",
+    "cost": "amigurumi",
     "date": "2025/10/05",
     "onStock": true
   }

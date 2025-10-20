@@ -1,4 +1,17 @@
 User-Agent: *
 Allow: /$
 Allow: /favicon.ico
-Disallow: /
+
+# allow static assets and media
+Allow: /assets/
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/media/
+Allow: /media/
+
+# block the sorteos page
+Disallow: /sorteo
+Disallow: /sorteo/
+
+# sitemap
+Sitemap: https://maticesnarrativos.com/sitemap.xml

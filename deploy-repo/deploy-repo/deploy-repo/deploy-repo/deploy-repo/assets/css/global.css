@@ -79,14 +79,14 @@ body::-webkit-scrollbar-thumb {
     color: var(--secondary-text-color-light);
   }
   .product-tile {
-    background: var(--secondary-background-color-dark, #000);
+    background: var(--secondary-background-color-light, #fff);
   }
   .product-tile div{
-    color: var(--secondary-text-color-dark, #fff);
+    color: var(--secondary-text-color-light, #000);
   }
   .product-modal-content {
-    background-color: var(--secondary-background-color-dark, #000);
-    color: var(--secondary-text-color-dark, #fff);
+    background-color: var(--secondary-background-color-light, #fff);
+    color: var(--secondary-text-color-light, #000);
   }
 }
 
@@ -271,10 +271,23 @@ main{
 .swiper-slide--card div img{
   max-width: 100%;
 }
-
 .swiper-button-next:hover,
 .swiper-button-prev:hover{
   color: var(--primary-green);
+}
+.home-more-info-section{
+  display: flex;
+  flex-direction: column;
+}
+.home-more-info-section div{
+  width: 100%;
+}
+.home-more-info-section h2{
+  text-align: center;
+  max-width: 100%;
+}
+.home-more-info-section img{
+  max-width: 100%
 }
 
 /* End home styles */
@@ -282,6 +295,10 @@ main{
 @media (min-width: 500px) {
   .product-modal-content {
     padding: 2rem 1.5rem 1.5rem 1.5rem;
+  }
+  .home-more-info-section > div{
+    align-self: center;
+    width: 80%;
   }
 }
 @media (min-width: 769px) {
@@ -320,6 +337,16 @@ main{
   }
   .expl-section-carousel.swiper{
     width: 67%;
+  }
+  .home-more-info-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+  }
+  .home-more-info-section > div{
+    width: 30%;
   }
   /* End home styles */
 }
